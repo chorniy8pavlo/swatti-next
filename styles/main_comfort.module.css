@@ -1,0 +1,154 @@
+.bg_comfort {
+	background: #F1F1F1;
+}
+
+.main_comfort {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: calc(720px + 50vw);
+	margin-left: auto;
+	color: var(--main_black);
+}
+
+.main_comfort .content {
+	max-width: 720px;
+	width: 100%;
+	padding-left: 61px;
+	padding-top: 140px;
+	padding-bottom: 140px;
+	padding-right: 134px;
+}
+
+.main_comfort h2 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 161.4%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.main_comfort p {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.6;
+	margin-bottom: 25px;
+}
+
+.main_comfort a {
+	margin-top: 60px;
+}
+
+.main_comfort .youtube {
+	background-color: #000;
+	position: relative;
+	/*	padding-top: 86.25%;*/
+	overflow: hidden;
+	cursor: pointer;
+	width: 50vw;
+}
+
+.main_comfort .youtube img {
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 140%;
+	object-fit: cover;
+	object-position: center;
+	left: 0;
+	opacity: 0.7;
+}
+
+.main_comfort .youtube .play_button {
+	width: 104px;
+	height: 104px;
+	background: rgba(239, 239, 239, 0.6);
+	z-index: 1;
+	border-radius: 100%;
+}
+
+.main_comfort .youtube .play_button:before {
+	content: "";
+	border-style: solid;
+	border-width: 25px 0 25px 40px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.main_comfort .youtube img,
+.main_comfort .youtube .play_button {
+	cursor: pointer;
+}
+
+.main_comfort .youtube img,
+.main_comfort .youtube iframe,
+.main_comfort .youtube .play_button,
+.main_comfort .youtube .play_button:before {
+	position: absolute;
+}
+
+.main_comfort .youtube .play_button {
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.main_comfort .youtube .play_button:before {
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%, -50%);
+}
+
+.main_comfort .youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+@media screen and (max-width:1440px){
+	.main_comfort .youtube,
+	.main_comfort .content 
+ {
+	width: 50%;
+	}
+}
+@media screen and (max-width:992px){
+	.main_comfort {
+		flex-direction: column-reverse;
+	}
+	.main_comfort .youtube{
+		height: 100vw;
+	}
+	.main_comfort .youtube,
+	.main_comfort .content {
+		width: 100%;
+		max-width: none;
+	}
+		.main_comfort .content {
+			padding-left: 61px;
+			padding-right: 61px;
+	}
+}
+@media screen and (max-width:768px){
+	.main_comfort .content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 15px;
+		padding-right: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.main_comfort a {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 35px;
+	}
+	.main_comfort p {
+		margin-bottom: 15px;
+	}
+	.main_comfort h2 {
+		font-size: 18px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+}

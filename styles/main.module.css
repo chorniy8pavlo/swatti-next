@@ -1,0 +1,243 @@
+
+/*why us start*/
+
+
+/*why us end*/
+
+/*customers start*/
+
+
+/*cusrtomers end*/
+
+
+/*how to get start*/
+
+
+/*how to get end*/
+ .changer {
+	display: flex;
+}
+
+ .changer .prev svg {
+	transform: rotate(180deg);
+}
+ .changer .next {
+	display: inline-block;
+}
+
+ .changer > span {
+	padding-left: 14px;
+	padding-right: 14px;
+	font-weight: 500;
+	transition: all .4s ease-in-out;
+	 cursor: pointer;
+}
+
+/*photos start*/
+.main_photos {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.main_photos h2 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 169.4%;
+	/* identical to box height, or 61px */
+
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.main_photos .nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 60px;
+}
+
+.main_photos .single_slide {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.main_photos .photos_slider {
+	margin-bottom: 60px;
+}
+
+.main_photos .single_slide div {
+	margin-bottom: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.main_photos .single_slide a {
+	background-color: #000;
+}
+
+.main_photos .single_slide a:hover img {
+	opacity: .5;
+}
+
+.main_photos .single_slide a:hover button {
+	opacity: 1;
+}
+
+.main_photos .single_slide button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	width: calc(100% - 50px);
+	padding: 16px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 169.4%;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+}
+
+.main_photos .single_slide img {
+	width: 100%;
+	transition: all .4s ease-in-out;
+	height: 300px;
+	object-fit: cover;
+}
+
+.main_photos .see_all {
+	max-width: 1240px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 29px;
+	border: 1px solid #454545;
+}
+
+.main_photos .see_all h4 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.42;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding-right: 100px;
+}
+
+/*photos end*/
+
+
+
+/*have questions start*/
+.main_have_questions {
+	/*	max-width: 442px;*/
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #1E1D1D;
+	position: relative;
+}
+
+.main_have_questions img {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.main_have_questions h2 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 169.4%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.main_have_questions p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.main_have_questions p a {
+	color: #848484;
+}
+
+.main_photos .see_all {
+	max-width: 1240px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 29px;
+	border: 1px solid #454545;
+}
+
+.main_photos .see_all h4 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.42;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding-right: 100px;
+}
+@media screen and (max-width:1200px) {
+	.main_photos .see_all h4{
+		font-size: 19px;
+		padding-right: 50px;
+	}
+}
+@media screen and (max-width:992px) {
+	.main_photos .see_all h4{
+		margin-bottom: 35px;
+		padding-right: 0;
+		text-align: center;
+	}
+}
+@media screen and (max-width:768px) {
+	.main_photos {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		position: relative;
+	}
+	.main_photos h2{
+		margin-bottom: 35px;
+		font-size: 18px;
+	}
+	.main_photos .nav {
+		padding-bottom: 0;
+	}
+	.main_photos .see_all{
+		padding: 29px 20px;
+	}
+	.main_photos .single_slide div:last-child {
+		display: none;
+	}
+	.changer{
+		position: absolute;
+		top: 460px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.main_photos .photos_slider {
+	margin-bottom: 95px;
+}
+}
+/*have questions end*/
